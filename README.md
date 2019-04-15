@@ -2,22 +2,24 @@
 
 Movies 2 Go is a Movie inventory / sales system that features CRUD (Create, Remove, Delete, Update) functionality that I built. When items are chosen and put through the Order function, prices are calculated automatically (tax is applied as well) and the orders are updated within a SQL Database.
 
-# Angular7
+# Getting Started | Step 1
 
 The front end of this project was generated with Angular CLI version 7.3.8.
 
-## Development server
+## Front End - Angular 7
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+You will need to have the [Angular CLI](https://github.com/angular/angular-cli#installation) installaed on your device and run `npm install` in order to recieve all dependencies before utilizing the application.
 
-# ASPNET - EF - MySQL
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically route you to the `/order` page.
+
+# Step 2 | Back End - ASP.NET - EF - MySQL
 
 The back end of this project was built with ASP.NET Core 2 + Entity Framework + MySQL.
 
-## Downloading steps
+## Downloading Steps
 
-ASPNET files are [Here](https://github.com/zeitlosein/MyWebAPI)
+ASPNET Web API is located [Here](https://github.com/zeitlosein/MyWebAPI).
 
-After downloading, open the solution in Visual Studio and run the solution with ISSExpress.
+After downloading the API, please open the solution in Visual Studio and run then `run solution with ISSExpress`.
 
-You must run both the front and back end projects at the same time in order to utilize the Movie Application.
+You must run both the front and back end projects `at the same time` in order to utilize the Movie Application.
