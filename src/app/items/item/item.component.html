@@ -1,0 +1,70 @@
+<form #form="ngForm" autocomplete="off" *ngIf="service.formData">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Movie Name</label>
+        <input
+          name="Name"
+          #Name="ngModel"
+          [(ngModel)]="service.formData.Name"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <label>Genre</label>
+        <input
+          name="Genre"
+          #Name="ngModel"
+          [(ngModel)]="service.formData.Genre"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <label>Cost</label>
+        <input
+          name="Cost"
+          #Name="ngModel"
+          [(ngModel)]="service.formData.Cost"
+          class="form-control"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- Movie Items Table -->
+  <table class="table table-borderless">
+    <thead class="thead-light">
+      <th>Movie Name</th>
+      <th>Genre</th>
+      <th>Cost</th>
+      <th>
+        <a
+          class="btn btn-sm btn-success text-white"
+          (click)="AddOrEditItem(null, service.formData.ItemID)"
+          ><i class="fa fa-plus"></i> Add Item</a
+        >
+      </th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of service.Items">
+        <td>{{ item.Name }}</td>
+        <td>{{ item.Genre }}</td>
+        <td>{{ item.Cost }}</td>
+        <td>
+          <a
+            class="btn btn-sm btn-info text-white"
+            (click)="AddOrEditItem(i, service.formData.ItemID)"
+            ><i class="fa fa-pencil"></i
+          ></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="form-group">
+    <button type="" class="btn btn-dark">
+      <i class="fa fa-database"></i> Add To Database
+    </button>
+    <a class="btn btn-outline-success ml-1" routerLink="/order"
+      ><i class="fa fa-plus-square"></i> Create New Order</a
+    >
+  </div>
+</form>
