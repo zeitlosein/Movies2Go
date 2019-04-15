@@ -1,6 +1,6 @@
 # Movies 2 Go
 
-Movies 2 Go is a Movie inventory / sales system that features CRUD (Create, Remove, Delete, Update) functionality. When items are chosen and put through the Order function, prices are calculated automatically (tax is applied as well) and the orders are updated within a SQL Database.
+Movies 2 Go is a Movie inventory / sales system that features CRUD (Create, Remove, Delete, Update) functionality that I built. When items are chosen and put through the Order function, prices are calculated automatically (tax is applied as well) and the orders are updated within a SQL Database.
 
 # Angular7
 
@@ -15,6 +15,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 The back end of this project was built with ASP.NET Core 2 + Entity Framework + MySQL.
 
 ## Downloading steps
+
+ASPNET files are [Here](https://github.com/zeitlosein/MyWebAPI)
 
 After downloading, open the solution in Visual Studio and run the solution with ISSExpress.
 
